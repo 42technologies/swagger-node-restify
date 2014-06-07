@@ -15,8 +15,8 @@ node Apps/petstore/main.js
 
 Then visit the server directly from your browser:
 
-```
-http://localhost:8002/api-docs
+```js
+http://localhost:8002/resources.json
 ```
 
 or from [swagger UI](https://github.com/wordnik/swagger-ui), mounted at `/docs`: [http://localhost:8002/docs](http://localhost:8002/docs).
@@ -82,5 +82,7 @@ swagger.addValidator(
 ### Current limitations
 
 <li> Only JSON is supported </li>
+
+<li> Nested objects may not be declared in the models array </li>
 
 <li> - There are probably (many) others </li>
